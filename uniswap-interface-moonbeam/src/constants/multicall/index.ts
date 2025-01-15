@@ -7,7 +7,9 @@ const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
   [ChainId.STANDALONE]: '0xF8cef78E923919054037a1D03662bBD884fF4edf',
   [ChainId.MOONROCK]: multicall,
   [ChainId.MOONBASE]: multicall,
-  [ChainId.MOONSHADOW]: multicall
+  [ChainId.MOONSHADOW]: multicall,
+  [ChainId.SEPOLIA]: '0x4709A64ccDB2C2154268801Dd61427794b2A853A',
+  [ChainId.MONAD]: multicall
 }
 
 export { MULTICALL_ABI, MULTICALL_NETWORKS }

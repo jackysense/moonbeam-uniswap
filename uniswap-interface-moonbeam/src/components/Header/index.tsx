@@ -5,7 +5,8 @@ import { Text } from 'rebass'
 
 import styled from 'styled-components'
 
-import Logo from '../../assets/images/mainlogo.png'
+import Logo from '../../assets/images/logo.svg'
+import mainlogo from '../../assets/images/mainlogo.svg'
 import { useActiveWeb3React } from '../../hooks'
 //import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
@@ -118,6 +119,8 @@ const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
   [ChainId.MOONROCK]: 'Moonrock Rococo',
   [ChainId.MOONBASE]: 'Moonbase Alpha',
   [ChainId.MOONSHADOW]: 'Moonshadow Westend',
+  [ChainId.SEPOLIA]: 'Sepolia',
+  [ChainId.MONAD]: 'Monad Devnet'
 }
 
 export default function Header() {
@@ -133,6 +136,9 @@ export default function Header() {
           <Title href=".">
             <UniIcon>
               <img style={{ height: 50 }} src={Logo} alt="logo" />
+            </UniIcon>
+            <UniIcon>
+              <img style={{ height: 30 }} src={mainlogo} alt="logo" />
             </UniIcon>
           </Title>
         </HeaderElement>

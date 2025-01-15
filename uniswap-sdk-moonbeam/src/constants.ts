@@ -9,7 +9,9 @@ export enum ChainId {
   STANDALONE = 1281,
   MOONROCK = 1286,
   MOONBASE = 1287,
-  MOONSHADOW = 1288
+  MOONSHADOW = 1288,
+  SEPOLIA = 11155111,
+  MONAD = 20143
 }
 
 export enum TradeType {
@@ -27,7 +29,9 @@ export const FACTORY_ADDRESS: { [key: string]: string } = {
   [ChainId.STANDALONE]: '0x5c4242beB94dE30b922f57241f1D02f36e906915',
   [ChainId.MOONROCK]: factory,
   [ChainId.MOONBASE]: factory,
-  [ChainId.MOONSHADOW]: factory
+  [ChainId.MOONSHADOW]: factory,
+  [ChainId.SEPOLIA]: '0x3584446E08A4433f3b57d0D53A4338A282fB570D',
+  [ChainId.MONAD]: factory
 }
 
 export const INIT_CODE_HASH = '0x01429e880a7972ebfbba904a5bbe32a816e78273e4b38ffa6bdeaebce8adba7c'
